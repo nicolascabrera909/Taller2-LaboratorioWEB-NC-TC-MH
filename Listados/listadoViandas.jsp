@@ -114,12 +114,11 @@
               </tr>
 			<c:forEach items="${listaViandas}" var="i" >
 				<tr>
-					<td> ${i.codigo} </td>
-					<td> ${i.Descripcion} </td>
-					<td> ${i.horaRegreso} </td>
-					<td> ${i.precio} </td>
-					<td> ${i.claveBus} </td>
-					<td> ${i.asDisp} </td>
+					<td> ${i.codigoAlfanumerico} </td>
+					<td> ${i.descripcion} </td>
+					<td> ${i.precioUnitario} </td>
+					<td> ${i.esVege} </td>
+					
 	
 	
 				</tr>
