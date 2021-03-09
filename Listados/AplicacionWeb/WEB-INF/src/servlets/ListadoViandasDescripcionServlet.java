@@ -63,8 +63,8 @@ public class ListadoViandasDescripcionServlet extends HttpServlet
 			{
 				ruta = "//"+ip+":"+puerto+"/fachada";
 				IFachada miFachada = (IFachada) Naming.lookup(ruta);
-				ArrayList<VOTipoVianda> listaViandasGeneral = miFachada.listadoDeViandaDescripcion(laDesc);
-				req.setAttribute("listaViandas", listaViandasGeneral);
+				ArrayList<VOTipoVianda> listaViandasDesc = miFachada.listadoDeViandaDescripcion(laDesc);
+				req.setAttribute("listaViandasDesc", listaViandasDesc);
 			} catch (MalformedURLException e) {
 				error = true;
 				msgError = "URL mal Formada";
