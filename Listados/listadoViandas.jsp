@@ -57,12 +57,8 @@
       <h4>
         Buscar por codigo
       </h4>
-      <p>
-        <font face="Tahoma", size="2" >
-          Ingrese codigo
-          <input type='text' name='destino' size=20>
-        </font>
-      </p>
+      <p> <input type='text' name='destino' size=20>
+     </p>
       <p>
          <button class="button button2" type='submit'>Consulta</button>
       </p>
@@ -76,10 +72,8 @@
         Buscar por descipcion
       </h4>
       <p>
-        <font face="Tahoma" , size="2" >
-          Ingrese descripcion
+
           <input type='text' name='destino' size=20>
-        </font>
       </p>
       <p>
         <button class="button button2" type='submit'>Consulta</button>
