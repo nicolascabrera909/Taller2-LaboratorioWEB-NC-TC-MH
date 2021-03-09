@@ -1,5 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<%@page pageEncoding="Cp1252" contentType="text/html; charset=Cp1252" %>
 <html>
   <head>
     <title>
@@ -59,8 +58,8 @@
         Buscar por codigo
       </h4>
       <p>
-        <font face="Tahoma" >
-          <a size="3">Ingrese codigo</a>
+        <font face="Tahoma", size="2" >
+          Ingrese codigo
           <input type='text' name='destino' size=20>
         </font>
       </p>
@@ -77,7 +76,7 @@
         Buscar por descipcion
       </h4>
       <p>
-        <font face="Tahoma" size="3">
+        <font face="Tahoma" , size="2" >
           Ingrese descripcion
           <input type='text' name='destino' size=20>
         </font>
@@ -93,7 +92,7 @@
 
 	<div style="text-align: right">
     <br><br><br>
-    <p><button class="button button2" href='Index.jsp'>Volver</button></p>
+    <p><button class="button button2" href='home.jsp'>Volver</button></p>
 	</div>
     
 
