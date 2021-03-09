@@ -1,15 +1,8 @@
-<%@page pageEncoding="Cp1252" contentType="text/html; charset=Cp1252" %>
-<jsp:useBean id='listaViandas' scope='request' class='java.util.ArrayList' />  
-<jsp:useBean id='listaViandasDesc' scope='request' class='java.util.ArrayList' />  
-<jsp:useBean id='laVianda' scope='request' class='valueObjects.VOVianda' />  
-
-<html>
-  <head>
+<html><head>
     <title>
       Viandas Caseras
     </title>
-  </head>
-  <body >
+  </head><body>
 
     <style>
 
@@ -27,10 +20,10 @@
      
     </style>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
-    <h1  style="background-color:powderblue;" align="center" style="font-size:3vw;"   >
+    <h1 style="background-color:powderblue;" align="center">
       Listado de viandas
     </h1>
 
@@ -40,18 +33,18 @@
     </style>
 
 
-    <table style="width:20%" border-collapse: "collapse";>
+    <table style="width:20%">
 
       <tr>
       </tr>
       <tr>
         <td>
-          <form action='ListadoGeneralViandasServlet' method='POST'>
+          <form action="ListadoGeneralViandasServlet" method="POST">
             <h4>
               Mostrar todas las viandas
             </h4>
             <p>
-              <button class="button button2" type='submit'  name='general'>
+              <button class="button button2" type="submit" name="general">
                 Consulta
               </button>
             </p>
@@ -59,15 +52,15 @@
 
 
 
-          <form action='ViandasDetalleServlet' method='POST'>
+          <form action="ListadoViandasDetalleServlet" method="POST">
             <h4>
               Buscar por codigo
             </h4>
             <p>
-              <input type='text' name='codigo' size=20>
+              <input type='text' name='codigo'/>
             </p>
             <p>
-              <button class="button button2" type='submit'>
+              <button class="button button2" type="submit">
                 Consulta
               </button>
             </p>
@@ -76,16 +69,16 @@
 
 
 
-          <form action='ListadoViandasDetalleServlet' method='POST'>
+          <form action="ViandasDetalleServlet" method="POST">
             <h4>
               Buscar por descipcion
             </h4>
             <p>
 
-              <input type='text' name='descripcion' size=20>
+              <input type='text' name='descripcion'/>
             </p>
             <p>
-              <button class="button button2" type='submit'>
+              <button class="button button2" type="submit">
                 Consulta
               </button>
             </p>
@@ -102,7 +95,7 @@
 
         <td>
             <table id="t01">
-              <tr>
+              <tr/>
                 <th>Codigo</th>
                 <th>Descripcion</th>
                 <th>Es vegetariana</th>
@@ -112,7 +105,7 @@
                 <th>Cantidad</th>
               <tr> 
               </tr>
-			<c:forEach items="${listaViandas}" var="i" >
+			<c:forEach items="${listaViandas}" var="i">
 				<tr>
 					<td> ${i.codigo} </td>
 					<td> ${i.Descripcion} </td>
@@ -147,15 +140,14 @@
 
 
     <div style="text-align: right">
-      <br>
-      <br>
+      <br/>
+      <br/>
       <p>
-        <button class="button button2" href='home.jsp'>
+        <button class="button button2" href="home.jsp">
           Volver
         </button>
       </p>
     </div>
 
 
-  </body>
-</html>
+  </body></html>
