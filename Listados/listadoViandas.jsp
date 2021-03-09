@@ -1,4 +1,4 @@
-<%@page pageEncoding="Cp1252" contentType="text/html; charset=Cp1252" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <jsp:useBean id='listaViandas' scope='request' class='java.util.ArrayList' />  
 <jsp:useBean id='listaViandasDesc' scope='request' class='java.util.ArrayList' />  
 <jsp:useBean id='laVianda' scope='request' class='valueObjects.VOVianda' />  

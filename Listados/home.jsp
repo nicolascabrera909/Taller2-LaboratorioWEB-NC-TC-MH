@@ -1,4 +1,4 @@
-<%@page pageEncoding="Cp1252" contentType="text/html; charset=Cp1252" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
   <head>
     <title>
