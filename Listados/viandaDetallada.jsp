@@ -93,7 +93,7 @@ footer {
 
 
 <header>
-          <a style="color:white; font-family: Segoe UI Light;" >Listado de viandas código</a>
+          <a style="color:white; font-family: Segoe UI Light;" >Listado de viandas por código</a>
 </header>
 
 <section>

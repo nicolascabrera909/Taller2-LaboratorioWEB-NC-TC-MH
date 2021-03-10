@@ -1,13 +1,8 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<jsp:useBean id='msgError' scope='request' class='java.lang.String' />  
- 
-<html>
-  <head>
+<html><head>
     <title>
       Algo salio mal
     </title>
-  </head>
-  <body >
+  </head><body>
 
 
  	<style>
@@ -66,7 +61,7 @@ article {
 
 /* Clear floats after the columns */
 section::after {
-  content: "";
+  content: &quot;&quot;;
   display: table;
   clear: both;
 }
@@ -88,8 +83,8 @@ footer {
 </style>
     
     <header>
-		<h1  style="background-color:#306080;" align="center" style="font-size:3vw;">
-      		<a style="color:white; font-family: Segoe UI Light;" > Ups! </a>
+		<h1 style="background-color:#306080;" align="center">
+      		<a style="color:white; font-family: Segoe UI Light;"> Ups! </a>
     	</h1>
 	</header>
 
@@ -102,8 +97,8 @@ footer {
       		background-size: 100% 100%; }
     	</style>
     	<div style="text-align: center">
-	           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	           <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	      	<h3>
         		${msgError}
       		</h3>
@@ -113,7 +108,7 @@ footer {
 <footer>
 	<div style="text-align: center">
   		<p>
-  		<a href='Home.jsp'>
+  		<a href="Home.jsp">
 	        <button class="button button2">Volver</button>
 	     </a>   
       	</p>
@@ -121,5 +116,4 @@ footer {
 </footer>
    
 
-  </body>
-</html>
+  </body></html>

@@ -1,14 +1,8 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<jsp:useBean id='listaViandasDesc' scope='request' class='java.util.ArrayList' />  
-
-
-<html>
-  <head>
+<html><head>
     <title>
       Viandas por descripción
     </title>
-  </head>
-  <body >
+  </head><body>
 
 <style>
       .button { background-color: #4CAF50; /* Green */ border: none; color: white; padding: 4px 15px; text-align:center;
@@ -92,22 +86,22 @@ footer {
 
 
 <header>
-          <a style="color:white; font-family: Segoe UI Light;" >Listado de viandas por descripción</a>
+          <a style="color:white; font-family: Segoe UI Light;">Listado de viandas descripcion</a>
 </header>
 
 <section>
  <nav>
 
-	<form action='ListadoViandasDescripcion' method='POST'>
+	<form action="ListadoViandasDescripcion" method="POST">
       	<p> 
-      <font face="Tahoma" size="3"> Ingrese descripción: <input type='text' name='descripcion' size=20> </font>  
+      <font face="Tahoma" size="3"> Ingrese descripción: <input type='text' name='descripcion'/> </font>  
       	</p>
-      <p> <input type='submit' class="button button2" value='CONSULTAR' > </p>
+      <p> <input type='submit' class="button button2" value='CONSULTAR'/> </p>
     </form>
  
  
    <article>   
-  	<table style="width:20%" border-collapse: "collapse";>
+  	<table style="width:20%">
     	<table id="t01">
         	<tr>
               	<th>
@@ -127,7 +121,7 @@ footer {
               	  </th>
 			</tr>
 			
-              <c:forEach items="${listaViandasDesc}" var="i" >
+              <c:forEach items="${listaViandasDesc}" var="i">
                 <tr>
                   <td>
                     ${i.codigoAlfanumerico}
@@ -156,7 +150,7 @@ footer {
 <footer>
 	<div style="text-align: right">
   		<p>
-  		<a href='Home.jsp'>
+  		<a href="Home.jsp">
 	        <button class="button button2">Volver</button>
 	    </a>    
       	</p>
@@ -173,6 +167,4 @@ footer {
       
 
 
-    </body>
-  </html>
-
+    </body></html>
