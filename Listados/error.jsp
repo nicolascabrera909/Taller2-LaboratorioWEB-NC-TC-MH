@@ -1,17 +1,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<jsp:useBean id='laVianda' scope='request' class='valueObjects.VOVianda' />  
- 
-
-
 <html>
   <head>
     <title>
-      Viandas Caseras
+      Viandas Caseras error!!!
     </title>
   </head>
   <body >
 
-<style>
+
+ 	<style>
       .button { background-color: #4CAF50; /* Green */ border: none; color: white; padding: 4px 15px; text-align:center;
       text-decoration: none; display: inline-block; font-size: 12px; margin: 2px 2px; transition-duration: 0.4s; cursor:
       pointer; } .button2 { background-color: white; color: black; border: 2px solid #008CBA; } .button2:hover
@@ -19,14 +16,12 @@
       border-collapse: collapse; } th, td { padding: 10px; text-align: left; } #t01 tr:nth-child(even) {
       background-color: #eee; } #t01 tr:nth-child(odd) { background-color: #fff; } #t01 th { background-color: black;
       color: white; }
- </style>
+    </style>
 
 
- <style>
-      body { background-image: url('imagenes/menu2.jpg'); background-repeat: no-repeat; background-attachment: fixed;
-      background-size: 100% 100%; }
-</style>
-
+    
+    
+    
 <style>
 * {
   box-sizing: border-box;
@@ -49,6 +44,7 @@ nav {
   float: left;
   width: 30%;
   height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
   padding: 20px;
 }
 
@@ -62,6 +58,7 @@ article {
   float: left;
   padding: 20px;
   width: 70%;
+  background-color: #f1f1f1;
   height: 300px; /* only for demonstration, should be removed */
 }
 
@@ -87,78 +84,38 @@ footer {
   }
 }
 </style>
-
-
-<header>
-		<h1  style="background-color:#306080;" align="center" style="font-size:3vw;"   >
-          <a style="color:white; font-family: Segoe UI Light;" >Listado de viandas codigo</a>
+    
+    <header>
+		<h1  style="background-color:#306080;" align="center" style="font-size:3vw;">
+      		<a style="color:white; font-family: Segoe UI Light;" > Algo salio mal !!! </a>
     	</h1>
-</header>
+	</header>
+
+
+
 
 <section>
+    	<style>
+      		body { background-image: url('imagenes/error.png'); background-repeat: no-repeat; background-attachment: fixed;
+      		background-size: 100% 100%; }
+    	</style>
+    	<div style="text-align: center">
+	           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-  	<table style="width:20%" border-collapse: "collapse";>
-     <tr>      </tr>
-     <tr>        
-        <td>
-          <table id="t01">
-            <tr>
-              <th>
-                Codigo
-              </th>
-              <th>
-                Descripcion
-              </th>
-              <th>
-                Precio Unitario
-              </th>
-              <th>
-                Tipo
-              </th>
-
-              <tr>
-              </tr>
-              <c:forEach items="${laVianda}" var="i" >
-                <tr>
-                  <td>
-                    ${i.codigo}
-                  </td>
-                  <td>
-                    ${i.descripcion}
-                  </td>
-                  <td>
-                    ${i.precioUnitario}
-                  </td>
-                  <td>
-                    ${i.tipo}
-                  </td>
-                </tr>
-              </c:forEach>
-            </table>
-          </td>
-        </tr>
-      </table>
+	      	<h3>
+        		Ocurrio un error inesperado
+      		</h3>
+    	</div>
 </section>
 
 <footer>
-	<div style="text-align: right">
+	<div style="text-align: center">
   		<p>
 	        <button class="button button2" href='home.jsp'>Volver</button>
       	</p>
     </div>
 </footer>
-
-
-
-
    
 
-   
-
-
-      
-
-
-    </body>
-  </html>
-
+  </body>
+</html>

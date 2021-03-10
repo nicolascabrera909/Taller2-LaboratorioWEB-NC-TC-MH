@@ -2,25 +2,86 @@
     <title>
       Viandas Caseras
     </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head><body>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    <h1 style="background-color:#306080;" align="center">
-      <a style="color:white; font-family: Segoe UI Light;">Bienvenido a Viandas Caseras </a>
-    </h1>
+/* Style the header */
+header {
+ 
+  padding: 0px;
+  text-align: center;
+  font-size: 15px;
+}
 
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  padding: 20px;
+}
 
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-    <style>
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: &quot;&quot;;
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+<style>
       body { background-image: url('imagenes/menu2.jpg'); background-repeat: no-repeat; background-attachment: fixed;
       background-size: 100% 100%; }
-    </style>
+</style>
+
+<header>
+		<h1 style="background-color:#306080;" align="center">
+      		<a style="color:white; font-family: Segoe UI Light;">Bienvenido a Viandas Caseras </a>
+    	</h1>
+</header>
 
 
-
-    <table style="width:20%">
+<section>
+  <nav>
+  
+     <table style="width:20%">
 
       <tr>
       </tr>
@@ -60,9 +121,9 @@
         <td>
         <br/><br/>
           <h1>
-            <A href="listadoViandas.jsp">
+            <a href="viandaDetallada.jsp">
               <img src="imagenes/libro2.png" alt="Lista"/>
-            </A>
+            </a>
           </h1>
         </td>
         <td>
@@ -73,6 +134,12 @@
         </td>
       </tr>
     </table>
+    
+  </nav>
+  <article>
+  </article>
+</section>
+
 
 
 
