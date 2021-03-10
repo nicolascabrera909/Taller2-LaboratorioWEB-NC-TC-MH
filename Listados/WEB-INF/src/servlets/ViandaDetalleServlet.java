@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Logica.IFachada;
+import Logica.Vegetariana;
+import Logica.Vianda;
 import Logica.exceptions.NoExisteLaViandaException;
 import Logica.valueobjects.VOVegetariana;
 import Logica.valueobjects.VOVianda;
@@ -44,13 +46,24 @@ public class ViandaDetalleServlet extends HttpServlet{
 			String ip = "127.0.0.1";
 			String ruta = "";
 			String puerto= "1099";
-			//IFachada fac= null;
+			VOVegetariana miVOVianda;
 			try 
 			{
 				ruta = "//"+ip+":"+puerto+"/fachada";
 				IFachada miFachada = (IFachada) Naming.lookup(ruta);
 				VOVianda pVOVianda= miFachada.listadoDetalladoDeVianda(codigoVianda);
-				VOVegetariana miVOVianda = (VOVegetariana)pVOVianda;
+				
+				if (pVOVianda instanceof VOVianda && !(pVOVianda instanceof VOVegetariana))
+				{
+					miVOVianda = new VOVegetariana(pVOVianda.getCodigoAlfanumerico(), pVOVianda.getDescripcion(), pVOVianda.getPrecioUnitario(),false,false,"");
+				}
+				else 
+				{
+					VOVegetariana miVege =(VOVegetariana)pVOVianda;
+					miVOVianda = new VOVegetariana (miVege.getCodigoAlfanumerico(), miVege.getDescripcion(), miVege.getPrecioUnitario(), miVege.getEsVegetariana(),miVege.getOvolactea(),miVege.getDescripcionAdicional() );
+				}
+				
+				
 					
 				req.setAttribute("laVianda", miVOVianda);
 			} catch (MalformedURLException e) {
