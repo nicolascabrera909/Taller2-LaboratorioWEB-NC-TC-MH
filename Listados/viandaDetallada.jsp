@@ -46,50 +46,7 @@
       </tr>
       <tr>
         <td>
-          <form action='ListadoGeneralViandasServlet' method='POST'>
-            <h4>
-              Mostrar todas las viandas
-            </h4>
-            <p>
-              <button class="button button2" type='submit'  name='general'>
-                Consulta
-              </button>
-            </p>
-          </form>
-
-
-
-          <form action='ViandasDetalleServlet' method='POST'>
-            <h4>
-              Buscar por codigo
-            </h4>
-            <p>
-              <input type='text' name='codigo' size=20>
-            </p>
-            <p>
-              <button class="button button2" type='submit'>
-                Consulta
-              </button>
-            </p>
-          </form>
-
-
-
-
-          <form action='ListadoViandasDetalleServlet' method='POST'>
-            <h4>
-              Buscar por descipcion
-            </h4>
-            <p>
-
-              <input type='text' name='descripcion' size=20>
-            </p>
-            <p>
-              <button class="button button2" type='submit'>
-                Consulta
-              </button>
-            </p>
-          </form>
+       
         </td>
 
         <td>        </td>
@@ -99,31 +56,28 @@
 	
 
 
-
-        <td>
+        <td>   
             <table id="t01">
-              <tr>
-                <th>Codigo</th>
+               <tr>
+             	<th>Codigo</th>
                 <th>Descripcion</th>
-                <th>Es vegetariana</th>
-                <th>Es vegetariana</th>
-                <th>Es ovolactea</th>
-                <th>Descripcion adicional</th>
-                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Es Ovolactea</th>
+              	<th>Descripcion Adicional</th>
+ 
               <tr> 
-              </tr>
-			<c:forEach items="${listaViandas}" var="i" >
+            </tr>
+	
 				<tr>
-					<td> ${i.codigo} </td>
-					<td> ${i.Descripcion} </td>
-					<td> ${i.horaRegreso} </td>
-					<td> ${i.precio} </td>
-					<td> ${i.claveBus} </td>
-					<td> ${i.asDisp} </td>
+				<td> ${i.codigo} </td>
+	 			<td> ${i.descripcion} </td>
+				<td> ${i.precioUnitario} </td>
+				<td> ${i.ovolactea} </td>
+				<td> ${i.descripcionAdicional} </td>
 	
 	
 				</tr>
-			</c:forEach>	
+	
               	
                 
              
