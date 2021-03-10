@@ -30,8 +30,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <h1  style="background-color:powderblue;" align="center" style="font-size:3vw;"   >
-      Listado de viandas
+      <h1  style="background-color:#306080;" align="center" style="font-size:3vw;"   >
+          <a style="color:white; font-family: Segoe UI Light;" >Detalle de vianda </a>
     </h1>
 
     <style>
@@ -101,8 +101,9 @@
 
 
     <div style="text-align: right">
-      <br>
-      <br>
+      	<br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
       <p>
         <button class="button button2" href='home.jsp'>
           Volver

@@ -22,8 +22,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
-    <h1 style="background-color:powderblue;" align="center">
-      Listado de viandas
+    <h1 style="background-color:#306080;" align="center">
+          <a style="color:white; font-family: Segoe UI Light;">Listado de viandas</a>
     </h1>
 
     <style>
@@ -34,21 +34,14 @@
 
     <table style="width:20%">
 
-      <tr>
-      </tr>
-      <tr>
-        <td>
-
-        </td>
-
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
+     <tr>      </tr>
+      
+     <tr>        
+      <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
 
         <td>
           <table id="t01">
@@ -90,10 +83,12 @@
       </table>
 
 
-
       <div style="text-align: right">
-        <br/>
-        <br/>
+        
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
+        
         <p>
           <button class="button button2" href="home.jsp">
             Volver
