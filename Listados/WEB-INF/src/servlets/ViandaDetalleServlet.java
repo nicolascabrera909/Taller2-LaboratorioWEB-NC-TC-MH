@@ -22,9 +22,6 @@ public class ViandaDetalleServlet extends HttpServlet{
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
 	{
-
-
-
 		//Valido los datos ingresados
 		boolean error = false;
 		String msgError = new String();
@@ -36,11 +33,9 @@ public class ViandaDetalleServlet extends HttpServlet{
 			msgError="Error: Debe ingresar un codigo de vianda.";
 		}
 		
-
 		//Guardo los datos en la sesión
 		if (!error)
 		{		
-
 			String ip = "127.0.0.1";
 			String ruta = "";
 			String puerto= "1099";
@@ -59,10 +54,7 @@ public class ViandaDetalleServlet extends HttpServlet{
 				{
 					VOVegetariana miVege =(VOVegetariana)pVOVianda;
 					miVOVianda = new VOVegetariana (miVege.getCodigoAlfanumerico(), miVege.getDescripcion(), miVege.getPrecioUnitario(), miVege.getEsVegetariana(),miVege.getOvolactea(),miVege.getDescripcionAdicional() );
-				}
-				
-				
-					
+				}	
 				req.setAttribute("laVianda", miVOVianda);
 			} catch (MalformedURLException e) {
 				error = true;
@@ -78,9 +70,7 @@ public class ViandaDetalleServlet extends HttpServlet{
 				error = true;
 				msgError=e.getMessage();
 			} 
-
 		}
-
 
 		/*IFachada miFachada= null;
 			Properties p = new Properties();
@@ -101,8 +91,6 @@ public class ViandaDetalleServlet extends HttpServlet{
 				miFachada = (IFachada) Naming.lookup(ruta);
 			} catch (MalformedURLException | NotBoundException e) {
 				msgError=e.getMessage();			}*/
-
-
 
 		// Forwardeo a la página apropiada
 		RequestDispatcher rd;

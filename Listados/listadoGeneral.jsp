@@ -5,7 +5,7 @@
 <html>
   <head>
     <title>
-      Viandas Caseras
+      Todas las viandas
     </title>
   </head>
   <body >
@@ -107,10 +107,10 @@ footer {
   		<table id="t01">
             <tr>
               <th>
-                Codigo
+                Código
               </th>
               <th>
-                Descripcion
+                Descripción
               </th>
               <th>
                 Precio Unitario

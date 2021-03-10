@@ -6,7 +6,7 @@
 <html>
   <head>
     <title>
-      Viandas Caseras
+      Viandas
     </title>
   </head>
   <body >
@@ -57,11 +57,9 @@
             </p>
           </form>
 
-
-
           <form action='ViandaDetalleServlet' method='POST'>
             <h4>
-              Buscar por codigo
+              Buscar por código
             </h4>
             <p>
               <input type='text' name='codigo' size=20>
@@ -73,12 +71,9 @@
             </p>
           </form>
 
-
-
-
           <form action='ListadoViandasDetalleServlet' method='POST'>
             <h4>
-              Buscar por descipcion
+              Buscar por descipción
             </h4>
             <p>
 
@@ -97,20 +92,15 @@
 		<td>        </td>
 		<td>        </td>
 	
-
-
         <td>
-<<<<<<< HEAD:Listados/principalWeb.jsp
-            
-=======
             <table id="t01">
               <tr>
-                <th>Codigo</th>
-                <th>Descripcion</th>
+                <th>Código</th>
+                <th>Descripción</th>
                 <th>Es vegetariana</th>
                 <th>Es vegetariana</th>
                 <th>Es ovolactea</th>
-                <th>Descripcion adicional</th>
+                <th>Descripción adicional</th>
                 <th>Cantidad</th>
               <tr> 
               </tr>
@@ -120,33 +110,12 @@
 					<td> ${i.descripcion} </td>
 					<td> ${i.precioUnitario} </td>
 					<td> ${i.esVege} </td>
-					
-	
-	
 				</tr>
 			</c:forEach>	
-              	
-                
-             
             </table>
->>>>>>> ae1edf199ef704b13502348626460f151ba46f41:Listados/listadoViandas.jsp
         </td>
-
-
       </tr>
     </table>
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div style="text-align: right">
       <br>

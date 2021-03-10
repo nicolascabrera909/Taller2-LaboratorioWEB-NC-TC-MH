@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      Viandas Caseras
+      Viandas
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -76,7 +76,7 @@ footer {
 
 <header>
 		<h1  style="background-color:#306080;" align="center" style="font-size:3vw;">
-      		<a style="color:white; font-family: Segoe UI Light;" >Bienvenido a Viandas Caseras </a>
+      		<a style="color:white; font-family: Segoe UI Light;" >Bienvenido a Viandas </a>
     	</h1>
 </header>
 
@@ -100,7 +100,7 @@ footer {
         <td>
         <br><br>
           <h3>
-            Menus
+            Todas las viandas
           </h3>
         </td>
       </tr>
@@ -116,7 +116,7 @@ footer {
         <td>
         <br><br>
           <h3>
-            Encontrala por nombre 
+            Buscar por descripción
           </h3>
         </td>
       </tr>
@@ -132,7 +132,7 @@ footer {
         <td>
         <br><br>
           <h3>
-            Si sabes el codigo buscala 
+            Buscar por código
           </h3>
         </td>
       </tr>

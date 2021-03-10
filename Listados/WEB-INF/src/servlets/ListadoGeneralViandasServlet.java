@@ -25,28 +25,19 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Properties;
 
-
-
-
-
 public class ListadoGeneralViandasServlet extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
 	{
-
-
-
 		//Valido los datos ingresados
 		boolean error = false;
 		String msgError = new String();
 
-
 		//Guardo los datos en la sesión
 		if (!error)
 		{		
-
 			String ip = "127.0.0.1";
 			String ruta = "";
 			String puerto= "1099";
@@ -71,9 +62,7 @@ public class ListadoGeneralViandasServlet extends HttpServlet
 				error = true;
 				msgError=e.getMessage();
 			}
-
 		}
-
 
 		/*IFachada miFachada= null;
 			Properties p = new Properties();
@@ -94,8 +83,6 @@ public class ListadoGeneralViandasServlet extends HttpServlet
 				miFachada = (IFachada) Naming.lookup(ruta);
 			} catch (MalformedURLException | NotBoundException e) {
 				msgError=e.getMessage();			}*/
-
-
 
 		// Forwardeo a la página apropiada
 		RequestDispatcher rd;

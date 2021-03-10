@@ -6,7 +6,7 @@
 <html>
   <head>
     <title>
-      Viandas Caseras
+      Detalle de vianda
     </title>
   </head>
   <body >
@@ -93,7 +93,7 @@ footer {
 
 
 <header>
-          <a style="color:white; font-family: Segoe UI Light;" >Listado de viandas codigo</a>
+          <a style="color:white; font-family: Segoe UI Light;" >Listado de viandas código</a>
 </header>
 
 <section>
@@ -101,25 +101,21 @@ footer {
     
      <form action='ViandaDetalle' method='POST'>
       	<p> 
-      <font face="Tahoma" size="3"> Ingrese codigo <input type='text' name='codigo' size=20> </font>  
+      <font face="Tahoma" size="3"> Ingrese código <input type='text' name='codigo' size=20> </font>  
       	</p>
       	<p> <input  type='submit' class="button button2" value='CONSULTAR' > </p>
     </form>
-   
 
-	
- 
   <article>
     <table style="width:20%" border-collapse: "collapse";>
     	<table id="t01">
         	<tr>
-              <th>Codigo</th>
-              <th>Descripcion</th>
+              <th>Código</th>
+              <th>Descripción</th>
               <th>Precio Unitario</th>
               <th>Tipo</th>
-              <th>Descripcion Adicional</th>
+              <th>Descripción Adicional</th>
 			</tr>
-			
 	        <tr>
 	            <td>${laVianda.codigoAlfanumerico}</td>
 	            <td>${laVianda.descripcion}</td>
@@ -127,14 +123,12 @@ footer {
 	            <td>${laVianda.ovolactea}</td>
 	            <td>${laVianda.descripcionAdicional}</td>
 	         </tr>
-	         
             </table>
         </table>
   </article> 
    </nav>
        
   </section> 
-
   	
 <nav>
 <footer>
@@ -147,16 +141,6 @@ footer {
     </div>
 </footer>
 </nav>
-
-
-
-   
-
-   
-
-
-      
-
 
     </body>
   </html>
