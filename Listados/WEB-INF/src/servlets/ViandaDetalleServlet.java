@@ -12,8 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Logica.IFachada;
-import Logica.Vegetariana;
-import Logica.Vianda;
 import Logica.exceptions.NoExisteLaViandaException;
 import Logica.valueobjects.VOVegetariana;
 import Logica.valueobjects.VOVianda;
