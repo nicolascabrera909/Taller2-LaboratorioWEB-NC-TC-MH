@@ -100,7 +100,36 @@
 
 
         <td>
+<<<<<<< HEAD:Listados/principalWeb.jsp
             
+=======
+            <table id="t01">
+              <tr>
+                <th>Codigo</th>
+                <th>Descripcion</th>
+                <th>Es vegetariana</th>
+                <th>Es vegetariana</th>
+                <th>Es ovolactea</th>
+                <th>Descripcion adicional</th>
+                <th>Cantidad</th>
+              <tr> 
+              </tr>
+			<c:forEach items="${listaViandas}" var="i" >
+				<tr>
+					<td> ${i.codigoAlfanumerico} </td>
+					<td> ${i.descripcion} </td>
+					<td> ${i.precioUnitario} </td>
+					<td> ${i.esVege} </td>
+					
+	
+	
+				</tr>
+			</c:forEach>	
+              	
+                
+             
+            </table>
+>>>>>>> ae1edf199ef704b13502348626460f151ba46f41:Listados/listadoViandas.jsp
         </td>
 
 
