@@ -1,4 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<jsp:useBean id='msgError' scope='request' class='java.lang.String' />  
+ 
 <html>
   <head>
     <title>
@@ -101,9 +103,9 @@ footer {
     	</style>
     	<div style="text-align: center">
 	           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	      	<h3>
-        		Ocurrio un error inesperado
+        		${msgError}
       		</h3>
     	</div>
 </section>
@@ -111,7 +113,9 @@ footer {
 <footer>
 	<div style="text-align: center">
   		<p>
-	        <button class="button button2" href='home.jsp'>Volver</button>
+  		<a href='Home.jsp'>
+	        <button class="button button2">Volver</button>
+	     </a>   
       	</p>
     </div>
 </footer>

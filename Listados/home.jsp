@@ -92,7 +92,7 @@ footer {
         <td>
         <br>
           <h1>
-            <A href='listadoGeneral.jsp'>
+            <A href='ListadoGeneral.jsp'>
               <img src="imagenes/logoM3.png" alt="Lista">
             </A>
           </h1>
@@ -108,7 +108,7 @@ footer {
         <td>
         <br><br>
           <h1>
-            <A href='listadoPorDescipcion.jsp'>
+            <A href='ListadoPorDescripcion.jsp'>
               <img src="imagenes/libro1.png" alt="Lista" >
             </A>
           </h1>
@@ -124,7 +124,7 @@ footer {
         <td>
         <br><br>
           <h1>
-            <a href='viandaDetallada.jsp'>
+            <a href='ViandaDetallada.jsp'>
               <img src="imagenes/libro2.png" alt="Lista" >
             </a>
           </h1>
