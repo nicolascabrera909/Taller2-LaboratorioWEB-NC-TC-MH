@@ -1,12 +1,9 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<html>
-  <head>
+<html><head>
     <title>
       Viandas
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head><body>
 
 <style>
 * {
@@ -48,7 +45,7 @@ article {
 
 /* Clear floats after the columns */
 section::after {
-  content: "";
+  content: &quot;&quot;;
   display: table;
   clear: both;
 }
@@ -75,8 +72,8 @@ footer {
 </style>
 
 <header>
-		<h1  style="background-color:#306080;" align="center" style="font-size:3vw;">
-      		<a style="color:white; font-family: Segoe UI Light;" >Bienvenido a Viandas </a>
+		<h1 style="background-color:#306080;" align="center">
+      		<a style="color:white; font-family: Segoe UI Light;">Bienvenido a Viandas </a>
     	</h1>
 </header>
 
@@ -84,21 +81,21 @@ footer {
 <section>
   <nav>
   
-     <table style="width:20%" border-collapse: "collapse";>
+     <table style="width:20%">
 
       <tr>
       </tr>
       <tr>
         <td>
-        <br>
+        <br/>
           <h1>
-            <A href='ListadoGeneral.jsp'>
-              <img src="imagenes/logoM3.png" alt="Lista">
+            <A href="ListadoGeneral.jsp">
+              <img src="imagenes/logoM3.png" alt="Lista"/>
             </A>
           </h1>
         </td>
         <td>
-        <br><br>
+        <br/><br/>
           <h3>
             Todas las viandas
           </h3>
@@ -106,15 +103,15 @@ footer {
       </tr>
        <tr>
         <td>
-        <br><br>
+        <br/><br/>
           <h1>
-            <A href='ListadoPorDescripcion.jsp'>
-              <img src="imagenes/libro1.png" alt="Lista" >
+            <A href="ListadoPorDescripcion.jsp">
+              <img src="imagenes/libro1.png" alt="Lista"/>
             </A>
           </h1>
         </td>
         <td>
-        <br><br>
+        <br/><br/>
           <h3>
             Buscar por descripción
           </h3>
@@ -122,15 +119,15 @@ footer {
       </tr>
        <tr>
         <td>
-        <br><br>
+        <br/><br/>
           <h1>
-            <a href='ViandaDetallada.jsp'>
-              <img src="imagenes/libro2.png" alt="Lista" >
+            <a href="ViandaDetallada.jsp">
+              <img src="imagenes/libro2.png" alt="Lista"/>
             </a>
           </h1>
         </td>
         <td>
-        <br><br>
+        <br/><br/>
           <h3>
        		 Buscar por código
           </h3>
@@ -146,5 +143,4 @@ footer {
 
 
 
-</body>
-</html>
+</body></html>

@@ -46,9 +46,9 @@ public class ListadoViandasDescripcionServlet extends HttpServlet
 		//Guardo los datos en la sesión
 		if (!error)
 		{		
-			String ip = "127.0.0.1";
+			String ip = super.getInitParameter("ipServidor");
 			String ruta = "";
-			String puerto= "1099";
+			String puerto= super.getInitParameter("puertoServidor");
 			//IFachada fac= null;
 			try 
 			{
@@ -75,25 +75,7 @@ public class ListadoViandasDescripcionServlet extends HttpServlet
 			}
 		}
 
-		/*IFachada miFachada= null;
-			Properties p = new Properties();
-			String nomArch = "config/config.properties";
-			try {
-				p.load(new FileInputStream(nomArch));
-			} catch (FileNotFoundException e) {
-				msgError= "Error: Archivo no existe.";
-			} catch (IOException e) {
-				msgError= "Error: Archivo no existe o no esta accesible.";
-			}
-			try {
-				String ip = p.getProperty("ipServidor");
-				int puerto = Integer.parseInt(p.getProperty("puertoServidor"));
-				// Pongo a correr el rmiregistry
-				String ruta = "//" + ip + ":" + puerto + "/fachada";
-				// Instancio mi Objeto Remoto y lo publico
-				miFachada = (IFachada) Naming.lookup(ruta);
-			} catch (MalformedURLException | NotBoundException e) {
-				msgError=e.getMessage();			}*/
+		
 
 		// Forwardeo a la página apropiada
 		RequestDispatcher rd;
