@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <jsp:useBean id='listaViandas' scope='request' class='java.util.ArrayList' />  
 <jsp:useBean id='listaViandasDesc' scope='request' class='java.util.ArrayList' />  
-<jsp:useBean id='laVianda' scope='request' class='valueObjects.VOVianda' />  
+<jsp:useBean id='laVianda' scope='request' class='Logica.valueobjects.VOVianda'  />  
 
 <html>
   <head>
