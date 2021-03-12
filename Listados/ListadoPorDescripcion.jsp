@@ -102,7 +102,7 @@ footer {
       	<p> 
       <font face="Tahoma" size="3"> Ingrese descripción: <input type='text' name='descripcion' size=20> </font>  
       	</p>
-      <p> <input type='submit' class="button button2" value='CONSULTAR' > </p>
+      <p> <input type='submit' class="button button2" value='Consultar' > </p>
     </form>
  
  

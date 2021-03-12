@@ -93,7 +93,7 @@ footer {
 
 
 <header>
-          <a style="color:white; font-family: Segoe UI Light;" >Listado de viandas por código</a>
+          <a style="color:white; font-family: Segoe UI Light;" >Detalles de vianda por código</a>
 </header>
 
 <section>
@@ -101,7 +101,7 @@ footer {
     
      <form action='ViandaDetalle' method='POST'>
       	<p> 
-      <font face="Tahoma" size="3"> Ingrese código <input type='text' name='codigo' size=20> </font>  
+      <font face="Tahoma" size="3"> Ingrese código: <input type='text' name='codigo' size=20> </font>  
       	</p>
       	<p> <input  type='submit' class="button button2" value='CONSULTAR' > </p>
     </form>
