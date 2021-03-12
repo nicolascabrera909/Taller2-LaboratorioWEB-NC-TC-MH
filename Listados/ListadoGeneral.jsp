@@ -131,7 +131,7 @@ footer {
                     ${i.precioUnitario}
                   </td>
                   <td>
-                    ${i.esVegetariana}
+                    ${i.esVege}
                   </td>
                 </tr>
               </c:forEach>

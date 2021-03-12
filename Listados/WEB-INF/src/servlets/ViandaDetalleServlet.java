@@ -15,6 +15,7 @@ import Logica.IFachada;
 import Logica.exceptions.NoExisteLaViandaException;
 import Logica.valueobjects.VOVegetariana;
 import Logica.valueobjects.VOVianda;
+import ValueObjetsMostrar.VOWebVianda;
 
 public class ViandaDetalleServlet extends HttpServlet{
 
@@ -44,18 +45,19 @@ public class ViandaDetalleServlet extends HttpServlet{
 			{
 				ruta = "//"+ip+":"+puerto+"/fachada";
 				IFachada miFachada = (IFachada) Naming.lookup(ruta);
-				VOVianda pVOVianda= miFachada.listadoDetalladoDeVianda(codigoVianda);
-				
-				if (pVOVianda instanceof VOVianda && !(pVOVianda instanceof VOVegetariana))
+				VOVianda elVO= miFachada.listadoDetalladoDeVianda(codigoVianda);
+				VOWebVianda miVO;
+				if (elVO instanceof VOVianda && !(elVO instanceof VOVegetariana))
 				{
-					miVOVianda = new VOVegetariana(pVOVianda.getCodigoAlfanumerico(), pVOVianda.getDescripcion(), pVOVianda.getPrecioUnitario(),false,false,"");
+					miVO = new VOWebVianda(elVO.getCodigoAlfanumerico(), elVO.getDescripcion(), elVO.getPrecioUnitario(),false,"");
 				}
 				else 
 				{
-					VOVegetariana miVege =(VOVegetariana)pVOVianda;
-					miVOVianda = new VOVegetariana (miVege.getCodigoAlfanumerico(), miVege.getDescripcion(), miVege.getPrecioUnitario(), miVege.getEsVegetariana(),miVege.getOvolactea(),miVege.getDescripcionAdicional() );
+					VOVegetariana miVege =(VOVegetariana)elVO;
+					miVO = new VOWebVianda(miVege.getCodigoAlfanumerico(), miVege.getDescripcion(), miVege.getPrecioUnitario(),miVege.getOvolactea(),miVege.getDescripcionAdicional() );
 				}	
-				req.setAttribute("laVianda", miVOVianda);
+				
+				req.setAttribute("laVianda", miVO);
 			} catch (MalformedURLException e) {
 				error = true;
 				msgError = "URL mal Formada";

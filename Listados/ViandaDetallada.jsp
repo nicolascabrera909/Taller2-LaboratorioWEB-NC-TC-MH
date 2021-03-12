@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<jsp:useBean id='laVianda' scope='request' class='Logica.valueobjects.VOVegetariana'/>  
+<jsp:useBean id='laVianda' scope='request' class='ValueObjetsMostrar.VOWebVianda'/>  
  
 
 

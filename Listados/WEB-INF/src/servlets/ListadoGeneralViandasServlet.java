@@ -7,7 +7,6 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import Logica.IFachada;
 import Logica.exceptions.NoExistenViandasException;
 import Logica.valueobjects.VOTipoVianda;
+import ValueObjetsMostrar.VOListados;
 
 //para cargar con archivo config
 import javax.servlet.http.HttpSession;
@@ -46,7 +46,9 @@ public class ListadoGeneralViandasServlet extends HttpServlet
 			{
 				ruta = "//"+ip+":"+puerto+"/fachada";
 				IFachada miFachada = (IFachada) Naming.lookup(ruta);
-				ArrayList<VOTipoVianda> listaViandasGeneral = miFachada.listadoGeneralDeViandas();
+				ArrayList<VOTipoVianda> listaViandasGeneral0 = miFachada.listadoGeneralDeViandas();
+				VOListados a=new VOListados();
+				ArrayList<VOListados> listaViandasGeneral=a.cambiarTipo(listaViandasGeneral0);
 				req.setAttribute("listaViandas", listaViandasGeneral);
 			} catch (MalformedURLException e) {
 				error = true;

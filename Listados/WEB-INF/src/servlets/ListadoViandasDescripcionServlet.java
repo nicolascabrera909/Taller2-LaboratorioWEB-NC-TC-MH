@@ -17,6 +17,7 @@ import Logica.IFachada;
 import Logica.exceptions.NoExisteLaViandaException;
 import Logica.exceptions.NoExistenViandasException;
 import Logica.valueobjects.VOTipoVianda;
+import ValueObjetsMostrar.VOListados;
 
 //para cargar con archivo config
 import javax.servlet.http.HttpSession;
@@ -54,7 +55,9 @@ public class ListadoViandasDescripcionServlet extends HttpServlet
 			{
 				ruta = "//"+ip+":"+puerto+"/fachada";
 				IFachada miFachada = (IFachada) Naming.lookup(ruta);
-				ArrayList<VOTipoVianda> listaViandasDesc = miFachada.listadoDeViandaDescripcion(laDesc);
+				ArrayList<VOTipoVianda> listaViandasDesc0 = miFachada.listadoDeViandaDescripcion(laDesc);
+				VOListados a=new VOListados();
+				ArrayList<VOListados> listaViandasDesc=a.cambiarTipo(listaViandasDesc0);
 				req.setAttribute("listaViandasDesc", listaViandasDesc);
 			} catch (MalformedURLException e) {
 				error = true;
