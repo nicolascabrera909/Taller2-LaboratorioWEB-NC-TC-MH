@@ -38,7 +38,7 @@ public class ListadoGeneralViandasServlet extends HttpServlet
 		//Guardo los datos en la sesión
 		if (!error)
 		{		
-			
+
 			String ip = super.getInitParameter("ipServidor");
 			String ruta = "";
 			String puerto= super.getInitParameter("puertoServidor");
@@ -66,7 +66,7 @@ public class ListadoGeneralViandasServlet extends HttpServlet
 			}
 		}
 
-		
+
 
 		// Forwardeo a la página apropiada
 		RequestDispatcher rd;

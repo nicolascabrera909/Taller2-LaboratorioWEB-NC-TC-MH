@@ -78,7 +78,6 @@ public class ListadoViandasDescripcionServlet extends HttpServlet
 			}
 		}
 
-		
 
 		// Forwardeo a la página apropiada
 		RequestDispatcher rd;

@@ -33,7 +33,7 @@ public class ViandaDetalleServlet extends HttpServlet{
 			error=true;
 			msgError="Error: Debe ingresar un codigo de vianda.";
 		}
-		
+
 		//Guardo los datos en la sesión
 		if (!error)
 		{		
@@ -56,7 +56,7 @@ public class ViandaDetalleServlet extends HttpServlet{
 					VOVegetariana miVege =(VOVegetariana)elVO;
 					miVO = new VOWebVianda(miVege.getCodigoAlfanumerico(), miVege.getDescripcion(), miVege.getPrecioUnitario(),miVege.getOvolactea(),miVege.getDescripcionAdicional() );
 				}	
-				
+
 				req.setAttribute("laVianda", miVO);
 			} catch (MalformedURLException e) {
 				error = true;
@@ -73,8 +73,6 @@ public class ViandaDetalleServlet extends HttpServlet{
 				msgError=e.getMessage();
 			} 
 		}
-
-			
 
 		// Forwardeo a la página apropiada
 		RequestDispatcher rd;
